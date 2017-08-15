@@ -1,4 +1,4 @@
-Bootstrap: docker
+Bootstrap:docker
 From: continuumio/anaconda3
 
 %post
