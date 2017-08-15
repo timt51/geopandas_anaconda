@@ -1,6 +1,9 @@
-Bootstrap:docker
-From: continuumio/anaconda3
+BootStrap: docker
+From: busybox:latest   # This is a comment
+
+%runscript
+    echo "This is what happens when you run the container..."
 
 %post
-conda install -y dask
-conda install -y -c conda-forge geopandas
+    echo "Hello from inside the container"
+echo "Install additional software here"
